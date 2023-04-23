@@ -1,0 +1,21 @@
+{
+    "name":"Naufil",
+    "short_name":"Naufil",
+    "start_url":"/index.html",
+    "display":"standalone",
+    "background_color":"#FFE9D2",
+    "theme_color":"#FFE9D2",
+    "orientation":"portrait-primary",
+    "icons":[
+        {
+            "src":"gojo.jpg",
+            "type":"image/jpg",
+            "sizes":"72x72"
+        },
+        {
+            "src":"naufil.png",
+            "type":"image/png",
+            "sizes":"128x128"
+        }
+    ]
+}
