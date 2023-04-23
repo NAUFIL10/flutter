@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Food Application</title>
+  <!-- materialize icons, css & js -->
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" href="/css/styles.css" rel="stylesheet">
+  <link rel="manifest" href="/manifest.json">
+</head>
+<body class="grey lighten-4">
+
+  <!-- top nav -->
+<nav class="z-depth-0">
+    <div class="nav-wrapper container">
+      <a href="/">F00Diee<span>App</span></a>
+      <span class="right grey-text text-darken-1">
+        <i class="material-icons sidenav-trigger" data-target="side-menu" style="cursor: pointer;">menu</i>
+      </span>
+    </div>
+  </nav>
+
+  <!-- side nav -->
+  <ul id="side-menu" class="sidenav side-menu">
+    <li><a class="subheader">F00Diee</a></li>
+    <li><a href="/" class="waves-effect">Home</a></li>
+    <li><a href="/pages/about.html" class="waves-effect">About</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="/pages/contact.html" class="waves-effect">
+      <i class="material-icons">mail_outline</i>Contact</a>
+    </li>
+  </ul>
+
+  <!-- recipes -->
+  <div class="recipes container grey-text text-darken-1">
+    <div class="card-panel recipe white row">
+      <img src="/img/burger.jpg" alt="recipe thumb">
+      <div class="recipe-details">
+        <div class="recipe-title">Burgers</div>
+        <div class="recipe-ingredients">Hamburger,White sauce, french fries</div>
+        <div class="cost">Rs:85</div>
+      </div>
+      <div class="recipe-delete">
+        <i class="material-icons">delete_outline</i>
+      </div>
+    </div>
+    <div class="card-panel recipe white row">
+      <img src="/img/pasta.jpg" alt="recipe thumb">
+      <div class="recipe-details">
+        <div class="recipe-title">Pasta Recipe</div>
+        <div class="recipe-ingredients">White sauce Pasta, Red Sauce Pasta</div>
+        <div class="cost">Rs:80</div>
+      </div>
+      <div class="recipe-delete">
+        <i class="material-icons">delete_outline</i>
+      </div>
+    </div>
+    <div class="card-panel recipe white row">
+      <img src="/img/rice.jpg" alt="recipe thumb">
+      <div class="recipe-details">
+        <div class="recipe-title">Vegetable Rice Varieties</div>
+        <div class="recipe-ingredients">Rice, Dhal, bhaji</div>
+        <div class="cost">Rs:100</div>
+      </div>
+      <div class="recipe-delete">
+        <i class="material-icons">delete_outline</i>
+      </div>
+    </div>
+    <div class="card-panel recipe white row">
+      <img src="/img/desserts.jpg" alt="recipe thumb">
+      <div class="recipe-details">
+        <div class="recipe-title">desserts</div>
+        <div class="recipe-ingredients">Ice creams, Cake, Juices, Chocolates</div>
+        <div class="cost">Rs:70</div>
+      </div>
+      <div class="recipe-delete">
+        <i class="material-icons">delete_outline</i>
+      </div>
+    </div>
+  </div>
+
+  <div class="center">
+    <a class="btn-floating btn-small btn-large add-btn sidenav-trigger" data-target="side-form">
+      <i class="material-icons">add</i>
+    </a>
+  </div>
+
+  <!-- add recipe side nav -->
+  <div id="side-form" class="sidenav side-form">
+    <form class="add-recipe container section">
+      <h6 >New Recipe</h6>
+      <div class="divider"></div>
+      <div class="input-field">
+        <input placeholder="e.g. Ninja soup" id="title" type="text" class="validate">
+        <label for="title">Recipe Title</label>
+      </div>
+      <div class="input-field">
+        <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" type="text" class="validate">
+        <label for="ingredients">Ingredients</label>
+      </div>
+      <div class="input-field center">
+        <button class="btn-small">Add</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="/js/ui.js"></script>
+</body>
+</html>
